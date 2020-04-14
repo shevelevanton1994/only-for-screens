@@ -1,0 +1,5 @@
+# OnlyForScreen
+
+<span *onlyForScreen="'desktop'">shown on big screens</span>
+<span *onlyForScreen="'tablet'">shown on tablet screens</span>
+<span *onlyForScreen="'mobile'">shown on small screens</span>
