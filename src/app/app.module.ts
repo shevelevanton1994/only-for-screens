@@ -3,8 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OnlyForScreenModule } from 'projects/only-for-screen/src/public-api';
-
+import { OnlyForScreenModule } from 'only-for-screen';
 @NgModule({
   declarations: [
     AppComponent
