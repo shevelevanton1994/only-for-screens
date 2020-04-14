@@ -1,0 +1,23 @@
+{
+  "name": "only-for-screen",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/shevelev_anton/_only-for-screens"
+  },
+  "author": {
+    "name": "Anton Shevelov",
+    "email": "antonshevelov@gmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "bugs": {
+    "url": "https://gitlab.com/shevelev_anton/_only-for-screens/-/issuess"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^9.1.1",
+    "rxjs": "~6.5.4"
+  }
+}
