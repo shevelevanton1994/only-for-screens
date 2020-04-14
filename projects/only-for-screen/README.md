@@ -1,24 +1,53 @@
-# OnlyForScreen
+# Only For Screen
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+Angular 9 directive for detecting changes of a window size and add or remove specific block.
 
-## Code scaffolding
+It is as simple as:
 
-Run `ng generate component component-name --project only-for-screen` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project only-for-screen`.
-> Note: Don't forget to add `--project only-for-screen` or else it will be added to the default project in your `angular.json` file. 
+```xml
+<span *onlyForScreen="'desktop'">shown on big screens</span>
+<span *onlyForScreen="'tablet'">shown on tablet screens</span>
+<span *onlyForScreen="'mobile'">shown on small screens</span>
+```
 
-## Build
+## Using the library
 
-Run `ng build only-for-screen` to build the project. The build artifacts will be stored in the `dist/` directory.
+Import the library in any Angular application by running:
 
-## Publishing
+```bash
+$ npm i only-for-screen
+```
 
-After building your library with `ng build only-for-screen`, go to the dist folder `cd dist/only-for-screen` and run `npm publish`.
+and then from your Angular `AppModule`:
 
-## Running unit tests
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppComponent } from './app.component';
 
-Run `ng test only-for-screen` to execute the unit tests via [Karma](https://karma-runner.github.io).
+// Import the library module
+import { OnlyForScreenModule } from 'only-for-screen';
 
-## Further help
+@NgModule({
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+        // Specify OnlyForScreenModule library as an import
+        OnlyForScreenModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+})
+export class AppModule {}
+```
+
+Once your library is imported, you can use its `onlyForScreen` directive in your Angular application:
+
+```xml
+<span *onlyForScreen="'mobile'">shown on small screens</span>
+```
+
+## License
+
+MIT © [Anton Shevelov](mailto:antonshevelov@gmail.com)
