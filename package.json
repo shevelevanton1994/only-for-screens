@@ -1,6 +1,18 @@
 {
   "name": "only-for-screen",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/shevelev_anton/_only-for-screenst"
+  },
+  "author": {
+    "name": "Anton Shevelov",
+    "email": "antonshevelov@gmail.com"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/shevelev_anton/_only-for-screens/-/issues"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^9.0.7",
     "@angular/core": "^9.0.7",
