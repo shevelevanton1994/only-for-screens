@@ -17,7 +17,6 @@
     ],
     "paths": {
       "only-for-screen": [
-        "dist/only-for-screen/only-for-screen",
         "dist/only-for-screen"
       ]
     }
